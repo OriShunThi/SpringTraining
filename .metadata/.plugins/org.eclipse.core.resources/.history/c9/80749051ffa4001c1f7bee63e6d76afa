@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: ￦ﾊﾘ￦ﾈﾸ￩ﾧ﾿
+Build-Jdk: 11.0.5
+Implementation-Title: BootApp
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: jp.sample.spboot
+Implementation-Vendor: Pivotal Software, Inc.
+Implementation-URL: http://projects.spring.io/spring-boot/BootApp/
+Created-By: Maven Integration for Eclipse
+

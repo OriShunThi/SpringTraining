@@ -1,0 +1,49 @@
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
+
+/*
+ * @RestController
+ * Webアプリのリクエストを受け付けるクラスであることの指定
+ * Rest(API)コントローラであることをSpring Bootに通知
+ *
+ *
+ * @EnableAutoConfiguration
+ * 様々な設定を自動的に有効化
+ * 各種設定を自動的に有効にする（面倒な設定はSpring Boot側に任せるという宣言）
+ */
+@RestController
+@EnableAutoConfiguration
+public class SampleController {
+
+	/*
+	 * @RequestMapping
+	 * URLパスの指定
+	 * どこのパスをたどればこのクラス(メソッド)がリクエストを処理するのかをSpring Bootに通知
+	 *
+	 * @ResponseBody
+	 * JSON形式が含まれることをSpring Bootに通知(JSONを返すという意味)
+	 */
+	@RequestMapping("/")
+	@ResponseBody
+	/**
+	 * リクエストを受け付けるメソッド
+	 * @param name
+	 * @return
+	 */
+	public List<String> top(@RequestParam(value = "name", required = false) String name){
+		List<String> list = new ArrayList<String>();
+		list.add("SpringBootの最小アプリケーション");
+		if(name == "hoge") {
+			list.add("(パラメータにhoge指定)");
+		} else {
+			list.add("(パラメータに指定なし)");
+		}
+		return list;
+	}
+}

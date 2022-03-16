@@ -1,0 +1,7 @@
+tomcatDir=C:/Users/折戸駿/OneDrive - 株式会社ネオシステム/デスクトップ/eclipse/tomcat/8
+eclipse.preferences.version=1
+fixTomcatHomeBug=fixed
+contextsDir=C:/Users/折戸駿/OneDrive - 株式会社ネオシステム/デスクトップ/eclipse/tomcat/8/conf/Catalina/localhost
+tomcatVersion=tomcatV8
+computeSourcePath=true
+tomcatConfigFile=C:/Users/折戸駿/OneDrive - 株式会社ネオシステム/デスクトップ/eclipse/tomcat/8/conf/server.xml
